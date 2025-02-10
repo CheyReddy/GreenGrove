@@ -1,0 +1,266 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-bottom: 3%;
+}
+h2{
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    font-weight: 500;
+}
+.container-fluid{
+    padding: 3% 8%;
+}
+
+/*  Title Section  */
+
+.Cover_page{
+    display: block;
+    object-fit: cover;
+    height: 250px;
+    width: 1060px;
+}
+.heading{
+    background-color: rgb(108, 112, 116);
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    opacity: 0.8;
+    width: fit-content;
+    width: 900px;
+    height: 170px;
+    border-radius: 8px;
+    padding: 1% 4%;
+}
+.heading>h2{
+    font-weight: 700;
+}
+h2 + p{
+    font-weight: 700;
+    font-size: 19px;
+}
+li>a, h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+p, h4{
+    margin-bottom: 10px;
+}
+
+/*   Nav Bar   */
+
+.nav-bar{
+    background-color: rgb(146, 246, 239);
+}
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+    margin-left: 150px;
+}
+.navbar-items{
+    margin-left: 500px;
+}
+.nav-item:hover{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/*   Contents   */
+
+.CarbonOffsets{
+    margin-top: 30px;
+}
+.head{
+    font-size: 25px;
+    font-weight: 600;
+}
+.head+p{
+    position: relative;
+    left: 150px;
+    width: 800px;
+    margin-bottom: 26px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+}
+.containers{
+    position: relative;
+    left: 14.5%;
+    background-color: rgb(146, 246, 239);
+    width: 220px;
+    height: 270px;
+    margin: auto 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/*   Carousel   */
+
+#Testimonials{
+    background-color: rgb(173, 248, 243);
+    padding: 5% 20%;
+    border-radius: 8px;
+}
+.carousel-item{
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+h2 + em{
+    font-size: 25px;
+}
+.carousel-btns{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+/*   Features    */
+
+.input{
+    position: relative;
+    left: 36%;
+    width: 300px;
+    margin-bottom: 15px;
+}  
+.input:hover{
+    background-color: rgb(197, 255, 251);
+    font-weight: 400;
+}
+.calculate-btn{
+    margin-bottom: 10px;
+}
+
+/*   Contacts   */
+#ReachUs{
+    padding-top: 20px;
+    background-color: rgb(173, 248, 243);
+    border-radius: 8px;
+}
+.ReachUs + p{
+    position: relative;
+    left: 240px;
+    margin-bottom: 15px;
+}
+.ContactUs{
+    padding-bottom: 20px;
+}
+.ContactUs a{
+    margin: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+/*   Footer   */
+
+footer>p{
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+/*  media queries  */
+@media (max-width: 640px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+
+    /*  Title Section  */
+
+    .Cover_page{
+        position: relative;
+        top: 40px;
+        display: block;
+        object-fit: cover;
+        width: 490px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+    .heading{
+        background-color: rgb(108, 112, 116);
+        position: absolute;
+        top: 14%;
+        left: 7%;
+        padding: 2% 5%;
+        height: 210px;
+        opacity: 0.8; 
+        width: 420px;
+        border-radius: 8px;
+    }
+
+        /* NavBar */
+
+    .navbar-brand {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .nav-item > .nav-link{
+        font-weight: 500;
+        position: relative;
+        right: 280px;
+    }
+    .nav-item{
+        width: max-content;
+    }
+    .nav-item:hover{
+        color: black;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .navbar-toggler{
+        margin-right: 20px;
+    }
+
+        /* Contents */
+
+    .head + p{
+        position: relative;
+        left: 32px;
+        width: 420px;
+    }
+    .containers{
+        position: relative;
+        left: 25%;
+        margin: auto 20px 15px;
+    }
+    #Testimonials{
+        margin-bottom: 25px;
+    }
+    .input{
+        position: relative;
+        left: 20%;
+    }  
+    .calculate-btn{
+        margin-bottom: 20px;
+    }
+    #AnnualCarbonFootprint{
+        margin-bottom: 20px;
+    }
+
+        /* ReachUs */
+
+    .ContactUs{
+        padding-bottom: 20px;
+    }
+
+        /* Footer */
+
+    #Footer{
+        margin-bottom: 25px;
+    }
+}
